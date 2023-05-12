@@ -1,0 +1,172 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.main-nav{
+  display: flex;
+  list-style: none;
+  font-size: 1.5em;
+  margin: 0;
+  padding-right: 50px;
+  background-color: dimgray;
+}
+  
+.push{
+  margin-right: auto;
+  padding-left: 50px;
+}
+  
+.main-nav li{
+  padding: 20px;
+}
+
+.perks li {
+  margin: 0 10px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  }
+
+.mainContainer {
+  max-width: 1920px;
+  margin: auto;
+  padding: 0 60px;
+}
+
+h2 {
+  text-align: center;
+  margin: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid gainsboro;
+  width: 100%;
+}
+
+.programmingLanguages P {
+  margin-bottom: 20px;
+}
+
+.latestVersion {
+  text-align: center;
+}
+
+.content {
+  padding-left: 30px;
+}
+
+.syntax {
+  padding: 0 50px;
+  text-align: center;
+}
+
+.cssSelectors p, .tableReference p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.tableHeader, .tableTags, .tableAttributes {
+  background-color: lightslategray;
+}
+
+.tableReference p {
+  margin: 20px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: gainsboro;
+}
+
+th {
+  height: 70px;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+.example {
+  margin: 0 10px;
+  list-style-position: inside;
+}
+
+.example .globalValues {
+  list-style: none;
+}
+
+.semicolon {
+  list-style-type: square;
+  /* list-style: georgian outside url('/non-existent.svg'); */
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 50px;
+  background-color: dimgray;
+  color: white;
+  font-size: 1.1rem;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.footer strong {
+  color: turquoise;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 73px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 3px 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 30px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: slategray; /* Add a dark-grey background on hover */
+}

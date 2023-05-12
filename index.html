@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li class="push"><a href="#"><em>Cheat Sheet</em></a></li>
+                <li><a href="#">CSS Selectors</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Table Reference</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainContainer">
+
+
+        <div class="programmingLanguages">
+            <h2>Programming Languages and their role in Web development</h2>
+            <p>Programming languages are computer languages, and are used for communicating with computers. These are set of detailed information about how something should be done or operated, and helps programmers to develop <em>programs</em>, <em>scripts</em> , or other <em>sets of instructions</em> for computers to execute.</p>
+
+            <table>
+                <tr class="tableHeader">
+                    <th>Programming Language</th>
+                    <th class="syntax">Syntax</th>
+                    <th>Description</th>
+                    <th class="syntax">Latest version</th>
+                    <th>Initial release</th>
+                </tr>
+
+                <tr>
+                    <td>HyperText Markup Language</td>
+                    <td class="syntax">HTML</td>
+                    <td>A standard markup language for web page creation, that allows the creation and structure of sections, paragraphs and links.</td>
+                    <td class="latestVersion">5</td>
+                    <td>22 January 2008</td>
+                </tr>
+                
+                <tr>
+                    <td>Cascading Style Sheets</td>
+                    <td class="syntax">CSS</td>
+                    <td>A language used to stylize elements written in a markup language such as HTML.</td>
+                    <td class="latestVersion">3</td>
+                    <td>12 April 2016</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td class="syntax">JS</td>
+                    <td>A scripting language that create dynamic on a web page and implements interactivity to the content.</td>
+                    <td class="latestVersion">ES6</td>
+                    <td>ECMA Script 2022 / <br> 22 July 2021</td>
+                </tr>
+
+                <tr>
+                    <td>Structured Query Language</td>
+                    <td class="syntax">SQL</td>
+                    <td>An open source relational database management system (RDBMS) with a client-server model.</td>
+                    <td class="latestVersion">16.0</td>
+                    <td>SQL : 2016 / <br> December 2016</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="cssSelectors">
+            <h2>CSS Selectors</h2>
+            <p><strong><em> * Specificity list</em></strong></p>
+            
+            <table>
+                <tr class="tableHeader">
+                    <th>Value</th>
+                    <th>Syntax</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+
+                <tr>
+                    <td><strong>id</strong> Selector</td>
+                    <td><strong>#idName { }</strong> <br> <em> A hash <em>(#)</em> character followed by the name of the ID. </em></td>
+                    <td>Selects elements with a specific <strong>ID</strong> attribute.</td>
+                    <td >
+                        <ul class="example">
+                            <li><strong>HTML:</strong> &lt;section <em>id='descriptive'&gt;</em> Descriptive writing helps the reader . . . &lt;section&gt;</li>
+                            <li><strong>CSS:</strong> <em>#descriptive</em> { font-family: Roboto; }</li>
+                            <li><strong>Result:</strong> Descriptive writing helps the reader visualize the person, place, thing, or situation being described.</li>
+                        </ul>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong><em>class</em></strong> Selector</td>
+                    <td><strong>.className { } </strong> <br> A period <em>(.)</em> character followed by the class name.</td>
+                    <td>Selects elements with a specific <strong><em>class</em></strong> attribute.</td>
+                    <td>
+                        <ul class="example">
+                            <li><strong>HTML:</strong> &lt;p class='study'&gt; data science &lt;p&gt; </li>
+                            <li><strong>CSS:</strong> .study { text-transform: uppercase; }</li>
+                            <li><strong>Result:</strong> DATA SCIENCE</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Type</strong> Selector (aka <strong>Element Type</strong> Selector)</td>
+                    <td><strong>element { }</strong></td>
+                    <td>Selects elements based on the html <strong>element type</strong> (e.g. &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, &lt;main&gt;, &lt;footer&gt;).</td>
+                    <td>
+                        <ul class="example">
+                            <li><strong>HTML:</strong> &lt;h1&gt;This is the text for H1.&lt;/h1&gt; &lt;p&gt;This is the text for p.&lt;/p&gt;</li>
+                            <li><strong>CSS:</strong> h1 { color: green; }</li>
+                            <li><strong>Result:</strong> This is the text for H1. <br> This is the text for p.</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Universal Selector</td>
+                    <td><strong>* { }</strong></td>
+                    <td>Selects <strong>all</strong> elements of <strong>any</strong> type.</td>
+                    <td>
+                        <ul class="example">
+                            <li><strong>HTML:</strong> &lt;h1&gt; This is the text for H1.&lt;/h1&gt; &lt;p&gt;This is the text for p.&lt;/p&lt;</li>
+                            <li><strong>CSS:</strong> <strong>*</strong> { color: green; }</li>
+                            <li><strong>Result:</strong> This is the text for H1. This is the text for p.</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Attribute</td>
+                    <td>[target]</td>
+                    <td>Selects <strong>all</strong> elements with a <strong>target</strong> attribute.</td>
+                    <td>
+                        <ul class="example">
+                            <li>[attribute*="value"]</li>
+                            <li>[class*="te"] { background: color; }</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Hover & Cursors</td>
+                    <td>:hover</td>
+                    <td>To specify the cursor appearance, use the CSS cursor property, which is used to change the mouse cursor type on elements. It can be useful in websites where different actions should be done rather than just clicking.</td>
+                    <td>
+                        <ul class="example">
+                            <li class="globalValues">/* Global values */</li>
+                            <li>cursor: inherit;</li>
+                            <li>cursor: initial;</li>
+                            <li>cursor: revert;</li>
+                            <li>cursor: revert-layer;</li>
+                            <li>cursor: unset;</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>:nth</td>
+                    <td>:nth-child(number) { css declarations; }</td>
+                    <td>The selector matches every element that is the nth child of its parent.</td>
+                    <td>
+                        <ul class="example">
+                            <li>p:nth-child(odd) { background: oddColor; }</li>
+                            <li>p:nth-child(even) { background: evenColor; }</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="tableReference">
+            <h2>HTML Table Reference</h2>
+            <p><strong><em> * Table Tags</em></strong></p>
+            
+            <table>
+                <tr class="tableTags">
+                    <th>Content</th>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+
+                <tr">
+                    <td class="content"># 1</td>
+                    <td>&lt;table&gt;</td>
+                    <td>Table</td>
+                    <td>The wrapper element for all HTML tables.</td>
+                </tr>
+                
+                <tr">
+                    <td class="content"># 2</td>
+                    <td>&lt;thead&gt;</td>
+                    <td>Table Head</td>
+                    <td>The set of rows defining the column headers in a table.</td>
+                </tr>
+
+                <tr">
+                    <td class="content"># 3</td>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Table Body</td>
+                    <td>The set of rows containing actual table data.</td>
+                </tr>
+
+                <tr>
+                    <td class="content"># 4</td>
+                    <td>&lt;tr&gt;</td>
+                    <td>Table Row</td>
+                    <td>The table row container.</td>
+                </tr>
+
+                <tr">
+                    <td class="content"># 5</td>
+                    <td>&lt;td&gt;</td>
+                    <td>Table Data</td>
+                    <td>The standard data cell in an HTML table.</td>
+                </tr>
+
+                <tr">
+                    <td class="content"># 6</td>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Table Foot</td>
+                    <td>The set of rows defining the footer in a table.</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="tableReference">
+            <p><strong><em> * Table Attributes</em></strong></p>
+            
+            <table>
+                <tr class="tableAttributes">
+                    <th>Content</th>
+                    <th>Attribute</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+    
+                <tr">
+                    <td class="content"># 1</td>
+                    <td>colspan</td>
+                    <td>Column Span</td>
+                    <td>Defines how many columns a td element should span.</td>
+                </tr>
+                
+                <tr">
+                    <td class="content"># 2</td>
+                    <td>rowspan</td>
+                    <td>Row Span</td>
+                    <td>Defines how many rows a td element should span.</td>
+                </tr>
+    
+            </table>
+        </div>
+    </main>
+    <footer class="footer">
+        <a><strong>2023 &copy; Cheat Sheet</strong></a>
+        <a href="#" class="item">About</a>
+        <a href="#" class="item">Paragraph</a>
+        <a href="#" class="item">Content</a>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#11161;</button> 
+    <script src="script.js"></script> 
+</body>
+</html>
